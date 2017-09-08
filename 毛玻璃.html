@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+	<meta charset="UTF-8">
+	<title>毛玻璃效果</title>
+<style>
+body {
+	min-height: 80vh;
+	box-sizing: border-box;
+	margin: 0;
+	padding-top: calc(40vh - 4em);
+	font: 12px "微软雅黑";
+
+}
+
+body, main::before {
+	background: linear-gradient(135deg, #ECEDDC 25%, transparent 25%) -50px 0,
+linear-gradient(225deg, #ECEDDC 25%, transparent 25%) -50px 0,
+linear-gradient(315deg, #ECEDDC 25%, transparent 25%),
+linear-gradient(45deg, #ECEDDC 25%, transparent 25%);	
+background-size: 100px 100px;
+background-color: #EC173A;
+}
+
+main {
+	position: relative;
+	margin: 0 auto;
+	padding: 1em;
+	max-width: 100em;
+	background: hsla(0,0%,100%,.2) border-box;
+	overflow: hidden;
+	border-radius: .7em;
+	box-shadow: 0 0 0 1px hsla(0,0%,100%,.3) inset,
+	            0 .5em 1em rgba(0, 0, 0, 0.6);
+	text-shadow: 0 1px 1px hsla(0,0%,100%,.3);
+	
+}
+
+main::before {
+	content: '';
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+	margin: -30px;
+	z-index: -1;
+	-webkit-filter: blur(15px);
+	filter: blur(10px);
+}
+
+blockquote { font-style: italic;}
+blockquote cite { font-style: normal; }
+#b1,#b2,#b3,#b4,#b5{
+	flex-wrap: wrap-reverse;
+}
+#b1 {
+	background: #58a;
+	background: linear-gradient(135deg, transparent 15px, #58a 0) /*top left,*/
+	           /* linear-gradient(-135deg, transparent 15px, #58a 0) top right,
+	            linear-gradient(-45deg, transparent 15px, #58a 0) bottom right,
+	            linear-gradient(45deg, transparent 15px, #58a 0) bottom left*/;
+	background-size: 50% 50%;
+	background-repeat: no-repeat;
+	padding: 3em 1.2em;
+	max-width: 9em;
+	color: white;
+	font: 150%/1.6 Baskerville, Palatino, serif;
+}
+#b2{
+	background: #58a;
+	background:/* linear-gradient(135deg, transparent 15px, #58a 0) top left,*/
+	            linear-gradient(-135deg, transparent 15px, #58a 0) /*top right,
+	            linear-gradient(-45deg, transparent 15px, #58a 0) bottom right,
+	            linear-gradient(45deg, transparent 15px, #58a 0) bottom left*/;
+	background-size: 50% 50%;
+	background-repeat: no-repeat;
+	padding: 3em 1.2em;
+	max-width: 9em;
+	color: white;
+	font: 150%/1.6 Baskerville, Palatino, serif;
+}
+#b3{
+	background: #58a;
+	background: /*linear-gradient(135deg, transparent 15px, #58a 0) top left,
+	            linear-gradient(-135deg, transparent 15px, #58a 0) top right,*/
+	            linear-gradient(-45deg, transparent 15px, #58a 0) /*bottom right,
+	            linear-gradient(45deg, transparent 15px, #58a 0) bottom left*/;
+	background-size: 50% 50%;
+	background-repeat: no-repeat;
+	padding: 3em 1.2em;
+	max-width: 9em;
+	color: white;
+	font: 150%/1.6 Baskerville, Palatino, serif;
+}
+#b4{
+	background: #58a;
+	background: /*linear-gradient(135deg, transparent 15px, #58a 0) top left,
+	            linear-gradient(-135deg, transparent 15px, #58a 0) top right,
+	            linear-gradient(-45deg, transparent 15px, #58a 0) bottom right,*/
+	            linear-gradient(45deg, transparent 15px, #58a 0) /*bottom left*/;
+	background-size: 50% 50%;
+	background-repeat: no-repeat;
+	padding: 3em 1.2em;
+	max-width: 9em;
+	color: white;
+	font: 150%/1.6 Baskerville, Palatino, serif;
+}
+#b5{
+	background: #58a;
+	background:	radial-gradient(circle at top left, transparent 15px, #58a 0) /*top left,
+	            radial-gradient(circle at top right, transparent 15px, #58a 0) top right,
+	            radial-gradient(circle at bottom right, transparent 15px, #58a 0) bottom right,
+	            radial-gradient(circle at bottom left, transparent 15px, #58a 0) bottom left*/;
+	background-size: 50% 50%;
+	background-repeat: no-repeat;
+	
+	padding: 3em 1.2em;
+	max-width: 9em;
+	color: white;
+	font: 150%/1.6 Baskerville, Palatino, serif;
+}
+</style>
+<head></head>
+<body>
+<main>
+    <blockquote>
+    <div id="b1">
+     <!--   <p>
+        “夕阳无限好　天色已黄昏
+		本想去凭爱　去换最灿烂一生
+		想不到长吻　带来更永恒伤感
+		夕阳无限好　却是近黄昏
+		高峰的快感　刹那失憾
+		风花雪月不肯等人 要献便献吻
+		好风景多的是　夕阳平常事
+		然而每天眼见的　永远不相似” </p>
+        <footer>--
+            <cite>
+                摘选 林夕《夕阳无限好》
+            </cite>
+        </footer> -->
+      </div> 
+      <div id="b2">
+      </div>
+      <div id="b3">
+      </div>
+      <div id="b4">
+      </div>
+      <div id="b5">
+      </div>
+    </blockquote>
+</main>
+</body>
+</html>
